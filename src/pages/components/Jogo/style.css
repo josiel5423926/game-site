@@ -1,0 +1,78 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+ */
+.chegada1{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 60px;
+   
+}
+.chegada2{
+    width: 20px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    top: 150px;
+  
+}
+
+
+/*  .animar{
+    animation: aviao1 5s infinite; 
+    animation: aviao2 5s infinite; 
+
+}  */
+/* 
+ @keyframes chegada {
+     
+ 
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+  */
+.aviao1{
+
+
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;   
+    top: 130px;
+    right: 700px;
+    animation: aviao1 5s infinite; 
+}
+.aviao2{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;   
+    top: 230px;
+    left: 480px;
+    animation: aviao2 5s infinite; 
+    font-size: 90px;
+    
+}
+
+
+@keyframes aviao2{
+    100%{left: 770px;}
+    0%{left: -0px;}
+}
+
+@keyframes aviao1{
+    100%{left: 770px;}
+    0%{left: -0px;}
+}
+
