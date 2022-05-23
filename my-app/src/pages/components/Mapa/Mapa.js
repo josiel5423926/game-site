@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { Canvas, Button,Container } from "../Mapa/styles";
 import { /* pageAnimation, */ scrollReveal } from "../AnimacaoMapa/animation";
 import mapa from "../../../assets/img/mapa.png";
+import {FaMapMarkedAlt} from "react-icons/fa";
 //import styled from "styled-components";
 //import { motion } from "framer-motion";
 //import {motion} from "framer-motion"
@@ -13,6 +14,9 @@ import { useScroll } from "../../../hooks/useScroll";
 //import Button from "rsuite/Button";
 
 export default function Mapa() {
+  function ReloaTest() {
+    document.location.href="/jogo";
+  }
   const [element, controls] = useScroll();
   /*  const boxMouseOverHandler = () => {
     alert("Navegue até há cidade usando o zoom");
@@ -45,9 +49,10 @@ export default function Mapa() {
   <Button variant="success">Success</Button>{' '}
 <Button variant="warning">Warning</Button>{' '} */}
             <Button>
-              <button className="styleButtonContact">
-                <Link to={"/jogo"}>Midgard</Link>
-              </button>
+              <FaMapMarkedAlt onClick={ReloaTest} style={{fontSize:"80px"}}/>
+          
+               
+              
             </Button>
 
             <img src={mapa} alt="mapa" /* className="maxWidth" */></img>
