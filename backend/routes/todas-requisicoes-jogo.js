@@ -6,7 +6,7 @@ router.get("/:slug", async (req, res) => {
   //acess bd
   try {
     const userJogo = await DbShemaJogo.findOne({
-      slug: req.params.slug
+      slug: req.params.slug,
     });
     res.json({
       sucesso: true,
@@ -23,15 +23,17 @@ router.get("/:slug", async (req, res) => {
 router.patch("/:slug", async (req, res) => {
   //acess bd
   try {
-    const updateUser = await DbShemaJogo.updateOne({
-      slug: req.params.slug
-    },
-    {
-      valorMoeda: req.body.valorMoeda,
-    });
+    const updateUser = await DbShemaJogo.updateOne(
+      {
+        slug: req.params.slug,
+      },
+      {
+        valorMoeda: req.body.valorMoeda,
+      }
+    );
     res.json({
       sucesso: true,
-      updated: updateUser.modifiedCount
+      updated: updateUser.modifiedCount,
     });
   } catch (err) {
     res.json({
@@ -60,6 +62,5 @@ router.post("/", async (req, res) => {
     });
   }
 });
-
 
 module.exports = router;
