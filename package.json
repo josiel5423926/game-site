@@ -1,0 +1,27 @@
+{
+  "name": "jogo-teste",
+  "version": "1.0.0",
+  "description": "Jogo teste",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node.js",
+    "react.js",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16",
+    "slug": "^5.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
