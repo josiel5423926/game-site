@@ -14,10 +14,7 @@ const DbShemaJogo = new Schema({
     required: true,
     unique: true,
     default: function () {
-      
-      return (
-         slug(Math.random()+this.hash+Math.random())
-        )
+      return slug(Math.random() + this.hash + Math.random());
     },
   },
   valorMoeda: {
